@@ -1,8 +1,6 @@
-colorscheme lucius
-
 set background=dark
 
-let g:lighthline = {'colorscheme' : 'lucius' }
+colorscheme hybrid
 
 set noswapfile
 
