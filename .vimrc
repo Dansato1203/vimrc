@@ -1,43 +1,49 @@
+" カラースキーム関連
 set background=dark
 
 colorscheme hybrid
 
+" スワップファイルを作らない
 set noswapfile
-
+" 他でファイルが変更されたら読み直す
 set autoread
-
+" 編集中でも他のファイルを開けるように
 set hidden
-
+" 入力中のコマンドをステータスに表示
 set showcmd
-
+" 行数を表示
 set number
-
+" 不可視文字を表示
 set list
-
+" 行末の1文字先までカーソルラインを移動できるように
 set virtualedit=onemore
-
+" スマートインデント({とかで調整してくれる) 
 set smartindent
-
+" ビープ音を可視化
 set visualbell
-
+" 対応する括弧を表示
 set showmatch
-
+" ステータスラインを常に表示
 set laststatus=2
-
-set wildmode=list:longest
-
+" コマンドラインでTAB補完
+set wildmenu
+" コマンドラインでTABによるファイル名補完
+set wildmode=list:longest,full
+" 改行時に前の行のインデントを引く継ぐ
 set autoindent
 
-set wildmenu
-
+" カーソルを表示行で移動
 nnoremap j gj
 nnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
 
+" シンタックスハイライトの有効化
 syntax enable
 
 
 
-set list listchars=tab:\>\-
+set list listchars=tab:\▸\-
 
 set expandtab
 
@@ -59,7 +65,6 @@ set hlsearch
 
 set splitbelow
 
-set list listchars=tab:\▸\-
 
 set expandtab
 
