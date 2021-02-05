@@ -42,14 +42,14 @@ nnoremap <Up> gk
 syntax enable
 
 
-
+" 不可視文字を可視化
 set list listchars=tab:\▸\-
-
+" Tab文字を半角に
 set expandtab
-
+" 行頭以外のTab文字の幅
 set tabstop=2
-
-set shiftwidth=2
+" 行頭のTab文字
+set shiftwidth=4
 
 set cursorline
 
